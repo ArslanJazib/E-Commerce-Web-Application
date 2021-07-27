@@ -1,0 +1,173 @@
+﻿     <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main Master.Master.cs" Inherits="WebApplication26.MasterPages.Site1" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Styles/style.css" />
+
+
+
+</head>
+<body onload="creatediv()">
+	<form id="form1" runat="server">
+    <!------- HEADER ------->
+    <div id="header">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="float-md-center">
+                        <a id="logo" href="Home.aspx" class="logo"><img src="/img/logo.png"></a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="header-search">
+                            <select class="input-select">
+                                <option value="0">All Categories</option>
+                                <option value="1">Laptop</option>
+                                <option value="2">Game</option>
+                                <option value="2">Phone</option>
+                            </select>
+                            <asp:TextBox ID="Search_input" type="text" name="search" runat="server" OnTextChanged="Unnamed1_TextChanged"></asp:TextBox>
+                            <button class="search-btn">Search</button>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="header-cart">
+                        <a id="cart" href="#" style="text-decoration:none;"><div><img class="shopping-cart" src="/img/cart.png" /></div><div class="cart-text">Cart</div></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!------- /HEADER ------->
+    <!------- Nav bar ------->
+    <nav class="navbar navbar-inverse" style="border-top-left-radius: 0px;border-bottom-left-radius: 0px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;">
+
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="Home.aspx">Home</a></li>
+                    <li><a href="Store.aspx">Hot Deals</a></li>
+                    <li><a href="Store.aspx">Categories</a></li>
+                    <li><a href="Store.aspx">Laptops</a></li>
+                    <li><a href="Store.aspx">Smartphones</a></li>
+                    <li><a href="Store.aspx">Games</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="Login.Aspx"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!------- /Nav bar ------->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+        <section id="Main_content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </section>
+
+		<!------- Footer ------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-xs-6 F1">
+                    <b>About Us</b>
+                    <ul class="FL">
+                        <li>
+                            <i class="fa fa-map-marker" style="color:red"><a href="#" style="padding-left:7px;">Shangrilla Road, Sector<br /> E-8 Islamabad.</a></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone" style="color:red"><a href="#" style="padding-left:2px;"> +923340747390</a></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope-o" style="color:red"><a href="#" style="padding-left:2px;"> email@email.com</a></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-6 F1">
+                    <b>CATEGORIES</b>
+                    <ul class="FL">
+                        <li>
+                            <a href="Store.aspx"> Hot deals</a>
+                        </li>
+                        <li>
+                            <a href="Store.aspx"> Laptops</a>
+                        </li>
+                        <li>
+                            <a href="Store.aspx"> Smartphones</a>
+                        </li>
+                        <li>
+                            <a href="Store.aspx"> Gaming console</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-6 F1">
+                    <b>INFORMATION</b>
+                    <ul class="FL">
+                        <li>
+                            <a href="#"> About Us</a>
+                        </li>
+                        <li>
+                            <a href="#"> Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#"> Order and Returns</a>
+                        </li>
+                        <li>
+                            <a href="#"> Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-6 F1">
+                    <b>SERVICE</b>
+                    <ul class="FL">
+                        <li>
+                            <a href="#"> My Account</a>
+                        </li>
+                        <li>
+                            <a href="#"> View Cart</a>
+                        </li>
+                        <li>
+                            <a href="#"> Track My Order</a>
+                        </li>
+                        <li>
+                            <a href="#"> Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------- /Footer ------->
+		</form>
+</body>
+</html>

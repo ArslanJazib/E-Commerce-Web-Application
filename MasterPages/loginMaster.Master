@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="loginMaster.master.cs" Inherits="WebApplication26.MasterPages.loginMaster" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="../Styles/Temp.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!------- HEADER ------->
+    <div id="header">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="float-md-center">
+                        <a id="logo"
+                            
+                            
+                            
+    href="#" class="logo">
+                            <img src="./img/logo.png" alt=""></a>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+
+    <form id="form1" runat="server">
+        <div>
+
+        <aside id="Sidebar">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </aside>
+
+        <section id="MainContent">
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+
+        </asp:ContentPlaceHolder>
+
+        </section>
+
+        </div>
+    </form>
+  
+    <script>
+
+        function SideToggle()
+         {
+            var s_toggle = document.getElementById("side");
+             if (s_toggle.style.display === 'none')
+             {
+                 s_toggle.style.display = 'block';
+                 return false;
+
+             }
+             else
+             {
+                 s_toggle.style.display = 'none';
+                  return false;
+             }
+        }
+        //Customer Dashboard
+        var account_toggle = document.getElementById("account");
+        var history_toggle = document.getElementById("history");
+        var return_toggle =  document.getElementById("returns");
+
+        history_toggle.style.display = 'none';
+        return_toggle.style.display = 'none';
+        account_toggle.style.display = 'block';
+
+         
+
+        function toggle_account()
+        {
+            if (account_toggle.style.display === 'none')
+            {
+                history_toggle.style.display = 'none';
+                return_toggle.style.display = 'none';
+                account_toggle.style.display = 'block';
+                
+
+                 return false;
+            }
+        }
+        function toggle_history()
+        {
+            if (history_toggle.style.display === 'none')
+            {
+                account_toggle.style.display = 'none';
+                return_toggle.style.display = 'none';
+                history_toggle.style.display = 'block';
+                 return false;
+            }
+        }
+        function toggle_returns()
+        {
+            if (return_toggle.style.display === 'none')
+            {
+                account_toggle.style.display = 'none';
+                history_toggle.style.display = 'none';
+                return_toggle.style.display = 'block';
+
+                 return false;
+            }
+        }
+
+    </script>
+</body>
+</html>
+
