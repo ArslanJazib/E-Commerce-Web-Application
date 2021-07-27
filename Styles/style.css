@@ -1,0 +1,491 @@
+﻿    /*-- Header --*/
+    div.Header-logo {
+    float: left;
+    display: block;
+    }
+
+    a.logo img {
+    float: unset;
+    position: relative;
+    }
+
+    #header {
+    background-color: #15161D;
+    position: -webkit-sticky;
+    position: sticky;
+    }
+
+    /*Styles for the brand name*/
+    a.col-md-3 {
+    text-decoration: none;
+    text-align: left;
+    padding-left: 0px;
+    display: inline-block;
+    }
+
+    a.col-sm-12 {
+    text-decoration: none;
+    text-align: center;
+    }
+
+
+    /*-- Select input button --*/
+
+    div.header-search {
+    padding: 15px 0px;
+    }
+
+    div.header-search form {
+    position: relative;
+    }
+
+    select.input-select {
+    margin-right: -4px;
+    border-radius: 40px 0px 0px 40px;
+    height: 40px;
+    padding: 0px 15px;
+    background: #FFF;
+    border: 1px solid #E4E7ED;
+    }
+
+    input#Search_input {
+    width: calc(100% - 260px);
+    margin-right: -4px;
+    height: 40px;
+    }
+
+    button.search-btn {
+    height: 40px;
+    width: 100px;
+    background: #D10024;
+    color: #FFF;
+    font-weight: 700;
+    border: none;
+    border-radius: 0px 40px 40px 0px;
+    }
+
+    /*-- Head Cart --*/
+    div.header-cart img {
+    height: 40px;
+    width: 50px;
+    position: center;
+    margin-top: 8px;
+    display: inline-block;
+    margin-right: 100px;
+    }
+
+    .cart-text {
+    color: white;
+    padding-left: 17px;
+    }
+
+    /*-- Main Nav --*/
+
+    #myNavbar a:hover {
+    color: white;
+    }
+
+    #myNavbar a:active {
+    color: #D10024 !important;
+    }
+
+    #myNavbar a:focus {
+    color: #D10024;
+    }
+
+
+
+    /*-- Footer --*/
+    .footer {
+    background: #15161D;
+    color: #B9BABC;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    }
+
+    .F1 {
+    color: white;
+    padding-top: 20px;
+    text-align: left;
+    display: block;
+    margin-top: 10px;
+    height: 200px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    display: inline-block;
+    }
+
+    .FL {
+    list-style-type: none;
+    padding-left: 0px;
+    padding-top: 15PX;
+    text-align: left;
+    display: list-item;
+    }
+
+    ul.FL li a {
+    color: gray !important;
+    text-decoration: none;
+    }
+
+    ul.FL li a:hover {
+    color: red !important;
+    }
+
+    ul.FL li {
+    padding-top: 10px;
+    display: list-item;
+    text-align: match-parent;
+    display: list-item;
+    }
+
+    /*-- Checkout --*/
+
+    .shiping-Address {
+    margin-bottom: 25px;
+    }
+
+    .section-title h3 {
+    font-weight: 600;
+    }
+
+    .input {
+    height: 35px;
+    width: 100%;
+    padding: 0px 15px;
+    border: 1px solid #E4E7ED;
+    background-color: #FFF;
+    }
+
+    .order-details {
+    position: relative;
+    /*padding: 0px 30px 30px;*/
+    border-right: 1px solid #E4E7ED;
+    border-left: 1px solid #E4E7ED;
+    border-bottom: 1px solid #E4E7ED;
+    }
+
+    div.Total {
+    margin-right: 0px;
+    text-align: center;
+    }
+
+    div.Total div {
+    margin-top: 15px;
+    }
+
+    div.Product div {
+    margin-top: 15px;
+    }
+
+    div.payment-method {
+    margin-top: 25PX;
+    }
+
+    div.payment-method div {
+    margin-top: 10px;
+    }
+
+    .order-total-rs {
+    text-align: center;
+    margin-right: 0px;
+    padding-right: 0px;
+    font-size: 20px;
+    color: #D10024;
+    }
+
+    .order-total {
+    font-size: 20px;
+    }
+
+    .input-radio label, .input-checkbox label {
+    font-weight: 500;
+    cursor: pointer;
+    }
+
+    .order-submit {
+    display: block;
+    margin-bottom: 2px;
+    }
+
+    .primary-btn {
+    padding: 12px 30px;
+    background-color: #D10024;
+    border: none;
+    border-radius: 40px;
+    color: #FFF;
+    font-weight: 700;
+    text-align: center;
+    transition: 0.2s all;
+    text-decoration: none;
+    }
+
+    .primary-btn {
+    padding: 12px 30px;
+    background-color: #D10024;
+    border: none;
+    border-radius: 40px;
+    color: #FFF;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    }
+
+    .primary-btn:hover {
+    padding: 12px 30px;
+    background-color: #D10024;
+    border: none;
+    border-radius: 40px;
+    color: #FFF;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    }
+
+    /*Small screen styling*/
+    @media only screen and (max-width:768px) {
+    #logo {
+    margin-left: 150px;
+    }
+
+    .header-cart {
+    padding-left: 200px;
+    }
+    
+
+    /*LOGIN*/
+    #SignIn {
+    margin-left: 200px !important;
+    }
+
+    #login_form {
+    margin-top: 60px !important;
+    }
+
+    #login_logo a {
+    padding-left: 170px !important;
+    }
+
+    /*Store Products*/
+
+    #filter {
+    width: 100% !important;
+    margin-left: 0px !important;
+    }
+
+    #All_Store_items {
+    display: inline-block;
+    margin-left: 0px !important;
+    width: 100% !important;
+    padding: 0px !important;
+    }
+    }
+
+    /*-- Jumbotron checkout --*/
+    .breadcrumb-header {
+    display: inline-block;
+    margin-top: -20px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+    }
+
+    .jb {
+    height: 50px;
+    }
+
+    .breadcrumb-tree {
+    display: inline-block;
+    }
+
+    .breadcrumb-tree li {
+    display: inline-block;
+    padding-left: 0px;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    }
+
+    .breadcrumb-tree li a {
+    display: inline-block;
+    padding-left: 0px;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    }
+
+    .breadcrumb-tree li a:hover {
+    color: #D10024;
+    }
+
+    .breadcrumb-tree li + li:before {
+    content: '/';
+    display: inline-block;
+    color: #8D99AE;
+    margin-right: 5px;
+    margin-left: 5px;
+    }
+
+    .breadcrumb-tree li a {
+    color: #8D99AE;
+    }
+
+    /*-- Checkout --*/
+
+    .shiping-Address {
+    margin-bottom: 25px;
+    }
+
+    .section-title h3 {
+    font-weight: 600;
+    }
+
+    .input {
+    height: 35px;
+    width: 100%;
+    padding: 0px 15px;
+    border: 1px solid #E4E7ED;
+    background-color: #FFF;
+    }
+
+    .order-details {
+    position: relative;
+    /*padding: 0px 30px 30px;*/
+    border-right: 1px solid #E4E7ED;
+    border-left: 1px solid #E4E7ED;
+    border-bottom: 1px solid #E4E7ED;
+    }
+
+    div.Total {
+    margin-right: 0px;
+    text-align: center;
+    }
+
+    div.Total div {
+    margin-top: 15px;
+    }
+
+    div.Product div {
+    margin-top: 15px;
+    }
+
+    div.payment-method {
+    margin-top: 25PX;
+    }
+
+    div.payment-method div {
+    margin-top: 10px;
+    }
+
+    .order-total-rs {
+    text-align: center;
+    margin-right: 0px;
+    padding-right: 0px;
+    font-size: 20px;
+    color: #D10024;
+    }
+
+    .order-total {
+    font-size: 20px;
+    }
+
+    .input-radio label, .input-checkbox label {
+    font-weight: 500;
+    cursor: pointer;
+    }
+
+    .order-submit {
+    display: block;
+    margin-bottom: 2px;
+    }
+
+    .primary-btn {
+    padding: 12px 30px;
+    background-color: #D10024;
+    border: none;
+    border-radius: 40px;
+    color: #FFF;
+    font-weight: 700;
+    text-align: center;
+    transition: 0.2s all;
+    text-decoration: none;
+    }
+
+    .primary-btn {
+    padding: 12px 30px;
+    background-color: #D10024;
+    border: none;
+    border-radius: 40px;
+    color: #FFF;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    }
+
+    .primary-btn:hover {
+    padding: 12px 30px;
+    background-color: #D10024;
+    border: none;
+    border-radius: 40px;
+    color: #FFF;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    }
+
+
+    /*LOGIN*/
+    #SignIn {
+    margin-left: 580px;
+    }
+
+    #login_form {
+    margin-top: 110px;
+    }
+
+    #login_form .form-control {
+    width: 250px;
+    }
+
+    #userForm {
+    display: none;
+    }
+
+    #adminForm {
+    display: none;
+    }
+
+    #u_btn {
+    margin-left: 100px;
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+    color: #D10024;
+    outline-color: transparent;
+    }
+
+    #u_btn span {
+    color: black;
+    font-size: 20px;
+    }
+
+    #a_btn {
+    margin-left: 100px;
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+    color: #D10024;
+    outline-color: transparent;
+    }
+
+    #a_btn span {
+    color: black;
+    font-size: 20px;
+    }
+
+    #login_logo a {
+    padding-left: 220px;
+    }

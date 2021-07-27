@@ -1,0 +1,74 @@
+﻿/*LOGIN*/
+#SignIn {
+    margin-left: 580px;
+}
+
+#login_form {
+    margin-top: 110px;
+}
+
+    #login_form .form-control {
+        width: 250px;
+    }
+
+#userForm {
+    display: none;
+}
+
+#adminForm {
+    display: none;
+}
+
+#u_btn {
+    margin-left: 100px;
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+    color: #D10024;
+    outline-color: transparent;
+}
+
+    #u_btn span {
+        color: black;
+        font-size: 20px;
+    }
+
+#a_btn {
+    margin-left: 100px;
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+    color: #D10024;
+    outline-color: transparent;
+}
+
+    #a_btn span {
+        color: black;
+        font-size: 20px;
+    }
+
+.login_logo a {
+    padding-left: 220px;
+}
+
+@media only screen and (max-width:768px) {
+    /*LOGIN*/
+    #SignIn {
+        margin-left: 200px !important;
+    }
+
+    #login_form {
+        margin-top: 60px !important;
+    }
+
+    .login_logo a {
+        padding-left: 170px !important;
+    }
+
+    /*Store Products*/
+
+    #filter {
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
+}

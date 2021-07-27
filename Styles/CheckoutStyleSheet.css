@@ -1,0 +1,142 @@
+﻿/*-- Jumbotron checkout --*/
+.breadcrumb-header {
+    display: inline-block;
+    margin-top: -20px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.jb {
+    height: 50px;
+}
+
+.breadcrumb-tree {
+    display: inline-block;
+}
+
+    .breadcrumb-tree li {
+        display: inline-block;
+        padding-left: 0px;
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+        .breadcrumb-tree li a {
+            display: inline-block;
+            padding-left: 0px;
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+            .breadcrumb-tree li a:hover {
+                color: #D10024;
+            }
+
+        .breadcrumb-tree li + li:before {
+            content: '/';
+            display: inline-block;
+            color: #8D99AE;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+
+        .breadcrumb-tree li a {
+            color: #8D99AE;
+        }
+
+/*-- Checkout --*/
+
+.shiping-Address {
+    margin-bottom: 25px;
+}
+
+.section-title h3 {
+    font-weight: 600;
+}
+
+.input {
+    height: 35px;
+    width: 100%;
+    padding: 0px 15px;
+    border: 1px solid #E4E7ED;
+    background-color: #FFF;
+}
+
+.order-details {
+    position: relative;
+    /*padding: 0px 30px 30px;*/
+    border-right: 1px solid #E4E7ED;
+    border-left: 1px solid #E4E7ED;
+    border-bottom: 1px solid #E4E7ED;
+}
+
+div.Total {
+    margin-right: 0px;
+    text-align: center;
+}
+
+    div.Total div {
+        margin-top: 15px;
+    }
+
+div.Product div {
+    margin-top: 15px;
+}
+
+div.payment-method {
+    margin-top: 25PX;
+}
+
+    div.payment-method div {
+        margin-top: 10px;
+    }
+
+.order-total-rs {
+    text-align: center;
+    margin-right: 0px;
+    padding-right: 0px;
+    font-size: 20px;
+    color: #D10024;
+}
+
+.order-total {
+    font-size: 20px;
+}
+
+.input-radio label, .input-checkbox label {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.order-submit {
+    display: block;
+    margin-bottom: 2px;
+}
+
+
+.add-to-cart-btn {
+    position: relative;
+    border: 2px solid transparent;
+    height: 40px;
+    padding: 0 30px;
+    background-color: #ef233c;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 40px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+    display: normal;
+}
+.add-to-cart-btn:hover {
+    background-color: #FFF;
+    color: #D10024;
+    border-color: #D10024;
+    padding: 0px 30px 0px 50px;
+}
